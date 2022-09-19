@@ -1,0 +1,35 @@
+.about-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.about-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-title-key {
+    margin: 0;
+    font-size: 50px;
+}
+
+.about-title-text {
+    font-size: 14px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content-key {
+    margin: 0;
+    font-size: 65px;
+    color: #ce8ab3;
+}
+
+.about-content-text {
+    font-size: 14px;
+}
