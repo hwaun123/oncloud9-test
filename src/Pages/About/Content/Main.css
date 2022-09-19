@@ -9,6 +9,7 @@
 .about-title {
     display: flex;
     justify-content: space-between;
+    color: white;
 }
 
 .about-title-key {
