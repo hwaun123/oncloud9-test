@@ -1,8 +1,9 @@
 .about-container{
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 2rem 5rem;
     gap: 2rem;
+    font-family: "RobotoCondensed";
 }
 
 .about-title {
@@ -13,10 +14,12 @@
 .about-title-key {
     margin: 0;
     font-size: 50px;
+    font-style: italic;
 }
 
 .about-title-text {
     font-size: 14px;
+    width: 550px;
 }
 
 .about-content {
@@ -28,6 +31,7 @@
     margin: 0;
     font-size: 65px;
     color: #ce8ab3;
+    font-style: italic;
 }
 
 .about-content-text {
