@@ -43,7 +43,7 @@ const RoadMap = () => {
             >
               <div className="roadmap-images-title">
                 <h1>01</h1>
-                <h2>sub</h2>
+                <h2>Interoperability & Integration</h2>
               </div>
               <img src={img1} alt="" className="roadmap-img1"></img>
             </div>
@@ -55,7 +55,7 @@ const RoadMap = () => {
             >
               <div className="roadmap-images-title">
                 <h1>02</h1>
-                <h2>sub</h2>
+                <h2>Launchpad</h2>
               </div>
               <img src={img2} alt="" className="roadmap-img2"></img>
             </div>
@@ -67,23 +67,23 @@ const RoadMap = () => {
             >
               <div className="roadmap-images-title">
                 <h1>03</h1>
-                <h2>sub</h2>
+                <h2>Holder Benefits</h2>
               </div>
               <img src={img3} alt="" className="roadmap-img3"></img>
             </div>
             <div
-              onClick={() => {
-                setNum(4);
-              }}
-              className={num === 4 ? "disable" : ""}
+            // onClick={() => {
+            //   setNum(4);
+            // }}
+            // className={num === 4 ? "disable" : ""}
             >
               <div className="roadmap-images-title">
                 <h1>04</h1>
-                <h2>sub</h2>
+                <h2>Coming Soon</h2>
               </div>
               <img src={img4} alt="" className="roadmap-img4"></img>
             </div>
-            <div
+            {/* <div
               onClick={() => {
                 setNum(5);
               }}
@@ -94,7 +94,7 @@ const RoadMap = () => {
                 <h2>sub</h2>
               </div>
               <img src={img5} alt="" className="roadmap-img5"></img>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

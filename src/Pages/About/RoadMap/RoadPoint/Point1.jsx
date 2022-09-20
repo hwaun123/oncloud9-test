@@ -3,13 +3,32 @@ const Point1 = () => {
   return (
     <div className="point-container">
       <div className="point-content">
-        <div className="point-title">01 // Vision & Value</div>
+        <div className="point-title">Interoperability & Integration</div>
         <div className="point-subTitle">
-          Avant Garde Studio aims to become the Louis Vuitton of the digital
-          fashion industry through its exclusive technology and attractive
-          ecosystem.
+          We are committed to providing interoperability for the collection by
+          allowing them to be integrated into anywhere our holders have an
+          online presence.
         </div>
-        <div>
+        <div className="point-contents">
+          <div className="point-content-title">Web 3.0 Metaverses</div>
+          <div className="point-content-texts">
+            <div className="point-content-title-text">a. The Sandbox</div>
+            <div className="point-content-date">complete</div>
+          </div>
+
+          <div className="point-content-title-text">
+            b. Decentraland(complete)
+          </div>
+          <div className="point-content-title-text">c. Roblox (2023/Q1)</div>
+          <div className="point-content-title-text">d. Zepeto (2023/Q1)</div>
+          <div className="point-content-title-text">e. ifland (2023/Q1)</div>
+          <div className="point-content-title">Online Games</div>
+          <div className="point-content-title-text">
+            User favorite Web 2.0 & 3.0 games (2023)
+          </div>
+        </div>
+
+        {/* <div>
           <div className="point-text-title">1. Proof of Ownership</div>
           <div className="point-text-content">
             Avant Garde Studio’s NFTs have both utilities as fashion items and
@@ -20,8 +39,8 @@ const Point1 = () => {
             inputting the creator, owner, and metadata into a smart contract of
             an NFT.
           </div>
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <div className="point-text-title">2. Digital Fashion NFT</div>
           <div className="point-text-content">
             Digital Fashion NFTs that are being sold at the moment are very
@@ -40,7 +59,7 @@ const Point1 = () => {
             whenever their digital fashion item is sold individually in each
             digital world.
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

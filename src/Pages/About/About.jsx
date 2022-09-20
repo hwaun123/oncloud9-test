@@ -13,6 +13,7 @@ const About = () => {
             setIsScrollMain(true);
           }
         }}
+        duration={1000}
       >
         <Slide>
           <Video />

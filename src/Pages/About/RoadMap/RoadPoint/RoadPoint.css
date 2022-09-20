@@ -5,22 +5,22 @@
 }
 
 .point-title {
-    font-size: 15px;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .point-subtitle {
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 200;
 }
 
 .point-text-title {
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .point-text-content {
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 200;
 }
 
@@ -29,3 +29,24 @@
     flex-direction: column;
     gap: 2rem;
 }
+
+.point-content-title{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.point-content-title-text{
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 1rem;
+}
+
+.point-contents {
+    margin :1rem;
+}
+
+.point-content-date{
+    border: 1px solid white;
+}
+
+.point-content-texts{}
