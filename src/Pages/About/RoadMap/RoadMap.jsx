@@ -17,7 +17,7 @@ const RoadMap = () => {
   const handleClick = () => {
     switch (num) {
       case 1:
-        return <Point1 />;
+        return <Point1 isClick={!!num} />;
       case 2:
         return <Point2 />;
       case 3:

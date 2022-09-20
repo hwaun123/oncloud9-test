@@ -1,7 +1,7 @@
 import "./RoadPoint.css";
-const Point1 = () => {
+const Point1 = ({ isClick }) => {
   return (
-    <div className="point-container">
+    <div className={`point-container ${isClick ? "click" : ""}`}>
       <div className="point-content">
         <div className="point-title">Interoperability & Integration</div>
         <div className="point-subTitle">
@@ -15,16 +15,29 @@ const Point1 = () => {
             <div className="point-content-title-text">a. The Sandbox</div>
             <div className="point-content-date">complete</div>
           </div>
-
-          <div className="point-content-title-text">
-            b. Decentraland(complete)
+          <div className="point-content-texts">
+            <div className="point-content-title-text">b. Decentraland</div>
+            <div className="point-content-date">complete</div>
           </div>
-          <div className="point-content-title-text">c. Roblox (2023/Q1)</div>
-          <div className="point-content-title-text">d. Zepeto (2023/Q1)</div>
-          <div className="point-content-title-text">e. ifland (2023/Q1)</div>
+
+          <div className="point-content-texts">
+            <div className="point-content-title-text">c. Roblox</div>
+            <div className="point-content-dates">2023/Q1</div>
+          </div>
+          <div className="point-content-texts">
+            <div className="point-content-title-text">d. Zepeto</div>
+            <div className="point-content-dates">2023/Q1</div>
+          </div>
+          <div className="point-content-texts">
+            <div className="point-content-title-text">e. ifland</div>
+            <div className="point-content-dates">2023/Q1</div>
+          </div>
           <div className="point-content-title">Online Games</div>
-          <div className="point-content-title-text">
-            User favorite Web 2.0 & 3.0 games (2023)
+          <div className="point-content-texts">
+            <div className="point-content-title-text">
+              User favorite Web 2.0 & 3.0 games
+            </div>
+            <div className="point-content-dates">2023</div>
           </div>
         </div>
 

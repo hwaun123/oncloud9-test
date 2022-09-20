@@ -1,8 +1,26 @@
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 .point-container {
     color: white;
     font-family: 'RobotoCondensed';
     width: 50%;
+    transition: 4s all ease-in;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
 }
+
+/* .click{
+    transform: translate3d(0%, 0%, 0px) ;
+    opacity: 1;
+} */
+
 
 .point-title {
     font-size: 2rem;
@@ -20,6 +38,7 @@
 }
 
 .point-text-content {
+    margin-left:1rem;
     font-size: 1rem;
     font-weight: 200;
 }
@@ -37,7 +56,7 @@
 
 .point-content-title-text{
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: bold;
     margin: 1rem;
 }
 
@@ -46,7 +65,22 @@
 }
 
 .point-content-date{
-    border: 1px solid white;
+    border-radius: 8px;
+    background-color: #6041d6;
+    padding: 3px;
+    display: inline;
+    font-weight: 200;
 }
 
-.point-content-texts{}
+.point-content-dates{
+    border-radius: 10px;
+    background-color: #ce8bb4;
+    padding: 3px;
+    display: inline;
+    font-weight: 200;
+}
+
+.point-content-texts{
+    display: flex;
+    align-items: center;
+}

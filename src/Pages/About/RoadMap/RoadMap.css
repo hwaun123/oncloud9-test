@@ -25,6 +25,7 @@
 }
 .roadmap-images > div:hover{
     flex-grow: 5;
+    
 }
 
 .roadmap-images > img:hover{
@@ -38,6 +39,7 @@
 .roadmap-map {
     display: flex;
     justify-content: space-between;
+    
 }
 .disable {
     display: none;
@@ -75,9 +77,8 @@
     font-size: 50px;
     font-weight: bold;
 }
-/* .roadmap-img1{
-    flex-grow: 1;
-}
+ /* .roadmap-img1{
+}/* 
 .roadmap-img2{
     flex-grow: 1;
 }
