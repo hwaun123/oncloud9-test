@@ -4,6 +4,16 @@
     padding: 2rem 5rem;
     gap: 2rem;
     font-family: "RobotoCondensed";
+    height: 100vh;
+    max-height:100vh;
+    transition: .4s all ease-in;
+    transform: translate3d(0%, 10%, 0px) ;
+    opacity: 0;
+}
+
+.load {
+    transform: translate3d(0%, 0%, 0px) ;
+    opacity: 1;
 }
 
 .about-title {
@@ -37,4 +47,6 @@
 
 .about-content-text {
     font-size: 14px;
+    color: white;
 }
+

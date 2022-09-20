@@ -1,0 +1,31 @@
+.point-container {
+    color: white;
+    font-family: 'RobotoCondensed';
+    width: 50%;
+}
+
+.point-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.point-subtitle {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.point-text-title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.point-text-content {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.point-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
