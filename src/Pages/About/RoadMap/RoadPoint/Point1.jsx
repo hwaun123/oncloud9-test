@@ -3,7 +3,7 @@ const Point1 = ({ isClick }) => {
   return (
     <div className={`point-container ${isClick ? "click" : ""}`}>
       <div className="point-content">
-        <div className="point-title">Interoperability & Integration</div>
+        <div className="point-title">01 Interoperability & Integration</div>
         <div className="point-subTitle">
           We are committed to providing interoperability for the collection by
           allowing them to be integrated into anywhere our holders have an
