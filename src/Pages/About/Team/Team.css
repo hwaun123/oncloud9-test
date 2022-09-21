@@ -20,20 +20,42 @@
     width: 33%;
     height: 33%;
 }
-.team-members-member > img{
+.team-members-member > .team-members-member-image img{
     width: 100%;
     height: 100%;
 }
 .team-members-member-text{
     margin-top: 2rem;
+    overflow: hidden;
 }
 
 .team-members-member-text-name{
+    transition: transform 1s;
+    transform: translate3d(0,1000%,0);
+    opacity: 0;
     font-weight: bold;
     font-size: 2rem;
 }
 
 .team-members-member-text-context{
+    transition: transform 1s;
+    transform: translate3d(0,1000%,0);
+    opacity: 0;
     font-weight: 200;
     font-size: 1rem;
+}
+
+.load{
+    transform: translate3d(0%, 0%, 0px) ;
+    opacity: 1;
+}
+
+.member-img{
+    transition: all 0.3s linear;
+}
+.member-img:hover{
+    transform: scale(1.2) rotate(-3deg);
+}
+.team-members-member-image{
+    overflow: hidden;
 }

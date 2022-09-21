@@ -7,7 +7,7 @@
     height: 100vh;
     max-height:100vh;
     transition: .4s all ease-in;
-    transform: translate3d(0%, 10%, 0px) ;
+    transform: translate3d(0%, 5%, 0px) ;
     opacity: 0;
 }
 
