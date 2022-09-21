@@ -3,6 +3,7 @@ import Main from "./Content/Main";
 import { FullPage, Slide } from "react-full-page";
 import RoadMap from "./RoadMap/RoadMap";
 import { useState } from "react";
+import Team from "./Team/Team";
 const About = () => {
   const [isScrollMain, setIsScrollMain] = useState(false);
   return (
@@ -23,6 +24,9 @@ const About = () => {
         </Slide>
         <Slide>
           <RoadMap />
+        </Slide>
+        <Slide scrollMode="normal">
+          <Team />
         </Slide>
       </FullPage>
     </>
