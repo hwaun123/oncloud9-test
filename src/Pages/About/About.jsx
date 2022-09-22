@@ -5,7 +5,7 @@ import RoadMap from "./RoadMap/RoadMap";
 import { useState } from "react";
 import Team1 from "./Team/Team1";
 import Team2 from "./Team/Team2";
-
+import Gallery from "./Gallery/Gallery";
 const About = () => {
   const [isScrollMain, setIsScrollMain] = useState(false);
   const [isScrollTeam1, setIsScrollTeam1] = useState(false);
@@ -45,6 +45,9 @@ const About = () => {
         </Slide>
         <Slide>
           <Team2 isScroll={isScrollTeam2} />
+        </Slide>
+        <Slide>
+          <Gallery />
         </Slide>
       </FullPage>
     </>

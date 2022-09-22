@@ -1,0 +1,51 @@
+.gallery-container{
+    height: 100vh;
+}
+
+.gallery-art{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-art > img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.slick-slide{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-art-img{
+    height: 25%;
+    width: 100%;
+}
+
+.gallery-art-img > img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.slick-slider{
+    height: 95vh;
+}
+
+.slick-list{
+    height: 100%;
+}
+.slick-track{
+    height: 100%;
+}
+
+.slick-initialized .slick-slide{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
