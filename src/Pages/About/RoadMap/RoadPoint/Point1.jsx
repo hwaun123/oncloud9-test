@@ -1,8 +1,10 @@
+import CloseButton from "./CloseButton";
 import "./RoadPoint.css";
-const Point1 = ({ isClick }) => {
+const Point1 = ({ closePoint }) => {
   return (
-    <div className={`point-container ${isClick ? "click" : ""}`}>
+    <div className={`point-container`}>
       <div className="point-content">
+        <CloseButton closePoint={closePoint} />
         <div className="point-title">01 Interoperability & Integration</div>
         <div className="point-subTitle">
           We are committed to providing interoperability for the collection by

@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 import Slider from "react-slick";
 import "./Gallery.css";
 import "slick-carousel/slick/slick.css";
@@ -8,43 +9,45 @@ import Content from "./Content";
 import { useState } from "react";
 const Gallery = () => {
   const [key, setKey] = useState(0);
+  const handleChage = (index) => {
+    setKey(index);
+  };
   const settings = {
     dots: true,
     slidesToShow: 3,
     infinite: false,
-    beforeChange: (_, index) => setKey(index),
+    beforeChange: (_, index) => handleChage(index),
   };
-  console.log(key);
   return (
     <div className="gallery-container">
       <div className="gallery-title">GALLERY</div>
-      <Content key={key} />
+      <Content id={key} />
       <Slider {...settings}>
         <div></div>
         <div>
           <div className="gallery-art">
-            <div className="gallery-art-img">
+            <div className={`gallery-art-img ${key === 0 ? "active" : ""}`}>
               <img src={img2} alt="" />
             </div>
           </div>
         </div>
         <div>
           <div className="gallery-art">
-            <div className="gallery-art-img">
+            <div className={`gallery-art-img ${key === 1 ? "active" : ""}`}>
               <img src={img1} alt="" />
             </div>
           </div>
         </div>
         <div>
           <div className="gallery-art">
-            <div className="gallery-art-img">
+            <div className={`gallery-art-img ${key === 2 ? "active" : ""}`}>
               <img src={img2} alt="" />
             </div>
           </div>
         </div>
         <div>
           <div className="gallery-art">
-            <div className="gallery-art-img">
+            <div className={`gallery-art-img ${key === 3 ? "active" : ""}`}>
               <img src={img1} alt="" />
             </div>
           </div>

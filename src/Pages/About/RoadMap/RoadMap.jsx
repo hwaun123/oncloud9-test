@@ -14,18 +14,22 @@ import Point5 from "./RoadPoint/Point5";
 const RoadMap = () => {
   const [num, setNum] = useState(0);
 
+  const closePoint = () => {
+    setNum(0);
+  };
+
   const handleClick = () => {
     switch (num) {
       case 1:
-        return <Point1 />;
+        return <Point1 closePoint={closePoint} />;
       case 2:
-        return <Point2 />;
+        return <Point2 closePoint={closePoint} />;
       case 3:
-        return <Point3 />;
+        return <Point3 closePoint={closePoint} />;
       case 4:
-        return <Point4 />;
+        return <Point4 closePoint={closePoint} />;
       case 5:
-        return <Point5 />;
+        return <Point5 closePoint={closePoint} />;
     }
   };
   return (

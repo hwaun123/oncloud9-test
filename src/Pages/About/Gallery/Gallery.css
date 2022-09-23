@@ -24,13 +24,13 @@
 .gallery-art-img{
     height: 25%;
     width: 100%;
+    filter: brightness(50%);
 }
 
 .gallery-art-img > img{
     width: 300px;
     height: 400px;
     object-fit: cover;
-    filter: brightness(50%);
 }
 
 .slick-slider{
