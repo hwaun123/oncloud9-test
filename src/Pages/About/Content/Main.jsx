@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
 import "./Main.css";
+import RoadMap from "../RoadMap/RoadMap";
+import Gallery from "../Gallery/Gallery";
+import Team1 from "../Team/Team1";
+import Team2 from "../Team/Team2";
 const Main = ({ isScroll }) => {
   const [isLoad, setIsLoad] = useState(false);
   useEffect(() => {
@@ -51,6 +55,10 @@ const Main = ({ isScroll }) => {
           </div>
         </div>
       </div>
+      <RoadMap />
+      <Team1 isScroll={true} />
+      <Team2 isScroll={true} />
+      <Gallery />
     </>
   );
 };

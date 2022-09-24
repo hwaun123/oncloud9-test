@@ -6,51 +6,75 @@ import { useState } from "react";
 import Team1 from "./Team/Team1";
 import Team2 from "./Team/Team2";
 import Gallery from "./Gallery/Gallery";
+import ReactFullpage from "@fullpage/react-fullpage";
 const About = () => {
   const [isScrollMain, setIsScrollMain] = useState(false);
   const [isScrollTeam1, setIsScrollTeam1] = useState(false);
   const [isScrollTeam2, setIsScrollTeam2] = useState(false);
 
   return (
-    <>
-      <FullPage
-        afterChange={({ to }) => {
-          if (to === 1) {
-            setIsScrollMain(true);
-          }
-          if (to === 3) {
-            setIsScrollTeam1(true);
-          } else {
-            setIsScrollTeam1(false);
-          }
-          if (to === 4) {
-            setIsScrollTeam2(true);
-          } else {
-            setIsScrollTeam2(false);
-          }
-        }}
-        duration={1000}
-      >
-        <Slide>
-          <Video />
-        </Slide>
-        <Slide>
-          <Main isScroll={isScrollMain} />
-        </Slide>
-        <Slide>
-          <RoadMap />
-        </Slide>
-        <Slide>
-          <Team1 isScroll={isScrollTeam1} />
-        </Slide>
-        <Slide>
-          <Team2 isScroll={isScrollTeam2} />
-        </Slide>
-        <Slide>
-          <Gallery />
-        </Slide>
-      </FullPage>
-    </>
+    <ReactFullpage
+      //fullpage options
+      licenseKey={"YOUR_KEY_HERE"}
+      scrollingSpeed={1000} /* Options here */
+      render={({ state, fullpageApi }) => {
+        return (
+          <ReactFullpage.Wrapper>
+            <div className="section">
+              <Video />
+              <button onClick={() => fullpageApi.moveSectionDown()}>
+                Click me to move down
+              </button>
+            </div>
+            <div className="section">
+              <Main isScroll={true} />
+            </div>
+          </ReactFullpage.Wrapper>
+        );
+      }}
+    />
   );
+
+  // return (
+  //   <>
+  //     <FullPage
+  //       afterChange={({ to }) => {
+  //         if (to === 1) {
+  //           setIsScrollMain(true);
+  //         }
+  //         if (to === 3) {
+  //           setIsScrollTeam1(true);
+  //         } else {
+  //           setIsScrollTeam1(false);
+  //         }
+  //         if (to === 4) {
+  //           setIsScrollTeam2(true);
+  //         } else {
+  //           setIsScrollTeam2(false);
+  //         }
+  //       }}
+  //       duration={1000}
+  //     >
+  //       <Slide>
+  //         <Video />
+  //       </Slide>
+  //       <Slide>
+  //         <Main isScroll={isScrollMain} />
+  //       </Slide>
+  //       <Slide>
+  //         <RoadMap />
+  //       </Slide>
+  //       <Slide>
+  //         <Team1 isScroll={isScrollTeam1} />
+  //       </Slide>
+  //       <Slide>
+  //         <Team2 isScroll={isScrollTeam2} />
+  //       </Slide>
+  //       <Slide>
+  //         <Gallery />
+  //       </Slide>
+  //     </FullPage>
+  //   </>
+  // );
 };
 export default About;
