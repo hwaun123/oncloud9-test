@@ -45,6 +45,7 @@
 
 .point-content {
     display: flex;
+    gap: 1rem;
     }
 
 .point-content-title{

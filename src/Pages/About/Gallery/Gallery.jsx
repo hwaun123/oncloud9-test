@@ -7,6 +7,7 @@ import img1 from "../../../Images/RoadMapImages/roadmap_5_pc.png";
 import img2 from "../../../Images/MenberImages/member3.png";
 import Content from "./Content";
 import { useState } from "react";
+import useScrollTitle from "../../../Hooks/useScrollTitle";
 const Gallery = () => {
   const [key, setKey] = useState(0);
   const handleChage = (index) => {
@@ -18,9 +19,26 @@ const Gallery = () => {
     infinite: false,
     beforeChange: (_, index) => handleChage(index),
   };
+  const animatedTitle1 = useScrollTitle();
+  const animatedTitle2 = useScrollTitle();
+  const animatedTitle3 = useScrollTitle();
+  const animatedTitle4 = useScrollTitle();
   return (
     <div className="gallery-container">
-      <div className="gallery-title">GALLERY</div>
+      <div className="about-title-name">
+        <div className="title1" {...animatedTitle1}>
+          GA
+        </div>
+        <div className="title2" {...animatedTitle2}>
+          LL
+        </div>
+        <div className="title3" {...animatedTitle3}>
+          ER
+        </div>
+        <div className="title4" {...animatedTitle4}>
+          Y
+        </div>
+      </div>
       <Content id={key} />
       <Slider {...settings}>
         <div></div>

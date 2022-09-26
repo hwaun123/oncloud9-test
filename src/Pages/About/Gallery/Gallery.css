@@ -1,5 +1,6 @@
 .gallery-container{
-    height: 100vh;
+    height: 50vh;
+    padding: 0rem 5rem;
 }
 
 .gallery-art{
@@ -28,8 +29,8 @@
 }
 
 .gallery-art-img > img{
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 350px;
     object-fit: cover;
 }
 
@@ -48,4 +49,23 @@
     display: flex !important;
     justify-content: center;
     align-items: center;
+}
+
+.gallery-title {
+    color: white;
+    font-family: 'RobotoCondensed'; 
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.fp-watermark{
+    opacity: 0;
+}
+
+.slick-prev{
+    opacity: 0;
+}
+
+.slick-next{
+    opacity: 0;
 }

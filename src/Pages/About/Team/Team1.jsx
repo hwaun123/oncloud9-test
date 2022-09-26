@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import useScrollAbout from "../../../Hooks/useScrollAbout";
 import useScrollTeam from "../../../Hooks/useScrollTeam";
+import useScrollTitle from "../../../Hooks/useScrollTitle";
 import member1 from "../../../Images/MenberImages/member1.png";
 import member2 from "../../../Images/MenberImages/member2.png";
 import member3 from "../../../Images/MenberImages/member3.png";
@@ -8,10 +9,26 @@ import "./Team.css";
 const Team1 = () => {
   const { ref, isChange } = useScrollTeam();
   console.log(isChange);
-
+  const animatedTitle1 = useScrollTitle();
+  const animatedTitle2 = useScrollTitle();
+  const animatedTitle3 = useScrollTitle();
+  const animatedTitle4 = useScrollTitle();
   return (
     <div className="team-container">
-      <div className="team-title">TEAM</div>
+      <div className="about-title-name">
+        <div className="title1" {...animatedTitle1}>
+          T
+        </div>
+        <div className="title2" {...animatedTitle2}>
+          E
+        </div>
+        <div className="title3" {...animatedTitle3}>
+          A
+        </div>
+        <div className="title4" {...animatedTitle4}>
+          M
+        </div>
+      </div>
       <div className="team-members">
         <div className="team-members-member">
           <div className="team-members-member-image">

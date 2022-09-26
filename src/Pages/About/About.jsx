@@ -13,9 +13,6 @@ const About = () => {
           <ReactFullpage.Wrapper>
             <div className="section">
               <Video />
-              <button onClick={() => fullpageApi.moveSectionDown()}>
-                Click me to move down
-              </button>
             </div>
             <div className="section">
               <Main />
