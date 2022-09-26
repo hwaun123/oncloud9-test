@@ -45,8 +45,8 @@
     font-size: 1rem;
 }
 
-.load{
-    transform: translate3d(0%, 0%, 0px) ;
+.onView{
+    transform: translate3d(0%, 0%, 0px);
     opacity: 1;
 }
 

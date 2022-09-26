@@ -16,7 +16,8 @@ const About = () => {
     <ReactFullpage
       //fullpage options
       licenseKey={"YOUR_KEY_HERE"}
-      scrollingSpeed={1000} /* Options here */
+      scrollingSpeed={1000}
+      /* Options here */
       render={({ state, fullpageApi }) => {
         return (
           <ReactFullpage.Wrapper>
@@ -27,7 +28,7 @@ const About = () => {
               </button>
             </div>
             <div className="section">
-              <Main isScroll={true} />
+              <Main />
             </div>
           </ReactFullpage.Wrapper>
         );

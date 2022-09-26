@@ -4,14 +4,19 @@ import RoadMap from "../RoadMap/RoadMap";
 import Gallery from "../Gallery/Gallery";
 import Team1 from "../Team/Team1";
 import Team2 from "../Team/Team2";
+import useScrollAbout from "../../../Hooks/useScrollAbout";
 const Main = ({ isScroll }) => {
   const [isLoad, setIsLoad] = useState(false);
   useEffect(() => {
-    setIsLoad(isScroll);
+    setIsLoad(false);
   }, [isScroll]);
+  const animatedItem = useScrollAbout();
   return (
     <>
-      <div className={`about-container ${isLoad ? "load" : ""}`}>
+      <div
+        className={`about-container ${isLoad ? "load" : ""}`}
+        {...animatedItem}
+      >
         <div className="about-title">
           <h1 className="about-title-key">ABOUT</h1>
           <div className="about-title-text">
@@ -54,6 +59,7 @@ const Main = ({ isScroll }) => {
             they love. Stay tuned for updates!
           </div>
         </div>
+        <form />
       </div>
       <RoadMap />
       <Team1 isScroll={true} />
