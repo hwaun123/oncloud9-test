@@ -6,6 +6,7 @@ import Team1 from "../Team/Team1";
 import Team2 from "../Team/Team2";
 import useScrollAbout from "../../../Hooks/useScrollAbout";
 import useScrollTitle from "../../../Hooks/useScrollTitle";
+import NavigationBar from "../NavigationBar/NavigationBar";
 const Main = ({ isScroll }) => {
   const animatedItem = useScrollAbout();
   const animatedTitle1 = useScrollTitle();
@@ -144,6 +145,7 @@ const Main = ({ isScroll }) => {
       <Team1 isScroll={true} />
       <Team2 isScroll={true} />
       <Gallery />
+      <NavigationBar />
     </>
   );
 };

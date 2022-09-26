@@ -1,7 +1,7 @@
 import Video from "./Video/Video";
 import Main from "./Content/Main";
 import ReactFullpage from "@fullpage/react-fullpage";
-const About = () => {
+const About = ({ isMuck }) => {
   return (
     <ReactFullpage
       //fullpage options
@@ -12,7 +12,7 @@ const About = () => {
         return (
           <ReactFullpage.Wrapper>
             <div className="section">
-              <Video />
+              <Video isMuck={isMuck} />
             </div>
             <div className="section">
               <Main />
