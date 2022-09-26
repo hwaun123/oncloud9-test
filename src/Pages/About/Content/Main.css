@@ -8,7 +8,7 @@
     max-height:100vh;
     transition: .4s all ease-in;
     transform: translate3d(0%, 5%, 0px) ;
-    opacity: 0;
+    opacity: 1;
 }
 
 .onView{
@@ -50,3 +50,39 @@
     color: white;
 }
 
+.about-title-name {
+    display: flex;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.title1{
+    transform: translate3d(0%, 50%, 0px) ;
+    transition: .2s all ease-in;
+    opacity: 1;
+}
+.title2{
+    transform: translate3d(0%, 50%, 0px) ;
+    transition: .4s all ease-in;
+    opacity: 0;
+}
+.title3{
+    transform: translate3d(0%, 50%, 0px) ;
+    transition: .6s all ease-in;
+    opacity: 0;
+}
+.title4{
+    transform: translate3d(0%, 50%, 0px) ;
+    transition: .8s all ease-in;
+    opacity: 0;
+}
+.title5{
+    transform: translate3d(0%, 50%, 0px) ;
+    transition: 1.0s all ease-in;
+    opacity: 0;
+}
+
+.onTitleView{
+    transform: translate3d(0%, 0%, 0px) ;
+    opacity: 1;
+}

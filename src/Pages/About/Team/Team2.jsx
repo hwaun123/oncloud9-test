@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
+import useScrollTeam from "../../../Hooks/useScrollTeam";
 import member4 from "../../../Images/MenberImages/member4.png";
 import member5 from "../../../Images/MenberImages/member5.png";
 import member6 from "../../../Images/MenberImages/member6.png";
 import "./Team.css";
 const Team2 = ({ isScroll }) => {
-  const [isLoad, setIsLoad] = useState(false);
-  useEffect(() => {
-    setIsLoad(isScroll);
-  }, [isScroll]);
+  const { ref, isChange } = useScrollTeam();
+
   return (
     <div className="team-container">
       <div className="team-title"></div>
@@ -16,24 +15,24 @@ const Team2 = ({ isScroll }) => {
           <div className="team-members-member-image">
             <img src={member4} alt="" className="member-img"></img>
           </div>
-          <div className={`team-members-member-text ${isLoad ? "" : ""}`}>
+          <div className={`team-members-member-text`} ref={ref}>
             <div
               className={`team-members-member-text-name ${
-                isLoad ? "load" : ""
+                isChange ? "onTeamView" : ""
               }`}
             >
               Andrew Choi
             </div>
             <div
               className={`team-members-member-text-context ${
-                isLoad ? "load" : ""
+                isChange ? "onTeamView" : ""
               }`}
             >
               Advisor
             </div>
             <div
               className={`team-members-member-text-context ${
-                isLoad ? "load" : ""
+                isChange ? "onTeamView" : ""
               }`}
             >
               • Founder/CEO at SuperNormal
@@ -44,17 +43,17 @@ const Team2 = ({ isScroll }) => {
           <div className="team-members-member-image">
             <img src={member5} alt="" className="member-img"></img>
           </div>
-          <div className={`team-members-member-text ${isLoad ? "" : ""}`}>
+          <div className={`team-members-member-text`} ref={ref}>
             <div
               className={`team-members-member-text-name ${
-                isLoad ? "load" : ""
+                isChange ? "onTeamView" : ""
               }`}
             >
               Thomas
             </div>
             <div
               className={`team-members-member-text-context ${
-                isLoad ? "load" : ""
+                isChange ? "onTeamView" : ""
               }`}
             >
               CSO
@@ -65,17 +64,17 @@ const Team2 = ({ isScroll }) => {
           <div className="team-members-member-image">
             <img src={member6} alt="" className="member-img"></img>
           </div>
-          <div className={`team-members-member-text ${isLoad ? "" : ""}`}>
+          <div className={`team-members-member-text`} ref={ref}>
             <div
               className={`team-members-member-text-name ${
-                isLoad ? "load" : ""
+                isChange ? "onTeamView" : ""
               }`}
             >
               JJ
             </div>
             <div
               className={`team-members-member-text-context ${
-                isLoad ? "load" : ""
+                isChange ? "onTeamView" : ""
               }`}
             >
               Head of Operations

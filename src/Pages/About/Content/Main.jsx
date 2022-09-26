@@ -5,20 +5,40 @@ import Gallery from "../Gallery/Gallery";
 import Team1 from "../Team/Team1";
 import Team2 from "../Team/Team2";
 import useScrollAbout from "../../../Hooks/useScrollAbout";
+import useScrollTitle from "../../../Hooks/useScrollTitle";
 const Main = ({ isScroll }) => {
   const [isLoad, setIsLoad] = useState(false);
   useEffect(() => {
     setIsLoad(false);
   }, [isScroll]);
   const animatedItem = useScrollAbout();
+  const animatedTitle1 = useScrollTitle();
+  const animatedTitle2 = useScrollTitle();
+  const animatedTitle3 = useScrollTitle();
+  const animatedTitle4 = useScrollTitle();
+  const animatedTitle5 = useScrollTitle();
+
   return (
     <>
-      <div
-        className={`about-container ${isLoad ? "load" : ""}`}
-        {...animatedItem}
-      >
+      <div className={`about-container`} {...animatedItem}>
         <div className="about-title">
-          <h1 className="about-title-key">ABOUT</h1>
+          <div className="about-title-name">
+            <div className="title1" {...animatedTitle1}>
+              A
+            </div>
+            <div className="title2" {...animatedTitle2}>
+              B
+            </div>
+            <div className="title3" {...animatedTitle3}>
+              O
+            </div>
+            <div className="title4" {...animatedTitle4}>
+              U
+            </div>
+            <div className="title5" {...animatedTitle5}>
+              T
+            </div>
+          </div>
           <div className="about-title-text">
             Avant Garde Studio designs and produces luxury digital fashion NFTs
             and continuous profits to holders. Our unique technology, AG Portal
