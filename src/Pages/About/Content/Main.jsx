@@ -63,10 +63,10 @@ const Main = ({ isScroll }) => {
         <div className="about-content">
           <div className="about-content-name">
             <div className="title1" {...animatedTitle6}>
-              //{" "}
+              // &nbsp;
             </div>
             <div className="title2" {...animatedTitle7}>
-              The{" "}
+              The &nbsp;
             </div>
             <div className="title3" {...animatedTitle8}>
               Col{" "}
@@ -91,13 +91,13 @@ const Main = ({ isScroll }) => {
         <div className="about-content">
           <div className="about-content-name">
             <div className="title1" {...animatedTitle11}>
-              //{" "}
+              // &nbsp;
             </div>
             <div className="title2" {...animatedTitle12}>
-              The{" "}
+              The &nbsp;
             </div>
             <div className="title3" {...animatedTitle13}>
-              Art{" "}
+              Art &nbsp;
             </div>
             <div className="title4" {...animatedTitle14}>
               Conc{" "}
@@ -115,16 +115,16 @@ const Main = ({ isScroll }) => {
         <div className="about-content">
           <div className="about-content-name">
             <div className="title1" {...animatedTitle16}>
-              //{" "}
+              // &nbsp;
             </div>
             <div className="title2" {...animatedTitle17}>
-              The{" "}
+              The &nbsp;
             </div>
             <div className="title3" {...animatedTitle18}>
               Visi{" "}
             </div>
             <div className="title4" {...animatedTitle19}>
-              on&V{" "}
+              on &nbsp;& &nbsp;V
             </div>
             <div className="title5" {...animatedTitle20}>
               alue{" "}
