@@ -1,10 +1,16 @@
 .content-container{
     color: white;
     position: absolute;
-    left: 40%;
-    top:300%
+    left: 18%;
+    top:100%;
+    z-index: 1;
 }
 
 .active{
     filter: brightness(100%);
+}
+
+.content-title{
+    border-bottom: 2px solid #ad667d;
+    width: 300px;
 }

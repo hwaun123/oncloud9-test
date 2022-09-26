@@ -1,6 +1,7 @@
 .gallery-container{
     height: 50vh;
     padding: 0rem 5rem;
+    position:relative;  
 }
 
 .gallery-art{
@@ -12,7 +13,6 @@
 .gallery-art > img{
     height: 100%;
     width: 100%;
-    
 }
 
 .slick-slide{
@@ -25,13 +25,26 @@
 .gallery-art-img{
     height: 25%;
     width: 100%;
-    filter: brightness(50%);
+    filter: brightness(40%);
+    position:relative;
+    z-index: 578;
+    transition: 1s;
 }
+
 
 .gallery-art-img > img{
     width: 250px;
     height: 350px;
     object-fit: cover;
+    opacity: 0.4;
+}
+
+.active > img {
+    width: 400px;
+    height: 500px;
+    opacity: 1;
+    border: 1px solid #ad667d;
+    padding: 15px;
 }
 
 .slick-slider{
@@ -69,3 +82,4 @@
 .slick-next{
     opacity: 0;
 }
+
