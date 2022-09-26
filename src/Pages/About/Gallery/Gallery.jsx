@@ -3,8 +3,18 @@ import Slider from "react-slick";
 import "./Gallery.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img1 from "../../../Images/RoadMapImages/roadmap_5_pc.png";
-import img2 from "../../../Images/MenberImages/member3.png";
+import img1 from "../../../Images/GalleryImages/gallery1.png";
+import img2 from "../../../Images/GalleryImages/gallery2.png";
+import img3 from "../../../Images/GalleryImages/gallery3.png";
+import img4 from "../../../Images/GalleryImages/gallery4.png";
+import img5 from "../../../Images/GalleryImages/gallery5.png";
+import img6 from "../../../Images/GalleryImages/gallery6.png";
+import img7 from "../../../Images/GalleryImages/gallery7.png";
+import img8 from "../../../Images/GalleryImages/gallery8.png";
+import img9 from "../../../Images/GalleryImages/gallery9.png";
+import img10 from "../../../Images/GalleryImages/gallery10.png";
+import img11 from "../../../Images/GalleryImages/gallery11.png";
+
 import Content from "./Content";
 import { useState } from "react";
 import useScrollTitle from "../../../Hooks/useScrollTitle";
@@ -45,28 +55,77 @@ const Gallery = () => {
         <div>
           <div className="gallery-art">
             <div className={`gallery-art-img ${key === 0 ? "active" : ""}`}>
-              <img src={img2} alt="" />
+              <img src={img1} alt="" />
             </div>
           </div>
         </div>
         <div>
           <div className="gallery-art">
             <div className={`gallery-art-img ${key === 1 ? "active" : ""}`}>
-              <img src={img1} alt="" />
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="gallery-art">
-            <div className={`gallery-art-img ${key === 2 ? "active" : ""}`}>
               <img src={img2} alt="" />
             </div>
           </div>
         </div>
         <div>
           <div className="gallery-art">
+            <div className={`gallery-art-img ${key === 2 ? "active" : ""}`}>
+              <img src={img3} alt="" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="gallery-art">
             <div className={`gallery-art-img ${key === 3 ? "active" : ""}`}>
-              <img src={img1} alt="" />
+              <img src={img4} alt="" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="gallery-art">
+            <div className={`gallery-art-img ${key === 4 ? "active" : ""}`}>
+              <img src={img5} alt="" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="gallery-art">
+            <div className={`gallery-art-img ${key === 5 ? "active" : ""}`}>
+              <img src={img6} alt="" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="gallery-art">
+            <div className={`gallery-art-img ${key === 6 ? "active" : ""}`}>
+              <img src={img7} alt="" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="gallery-art">
+            <div className={`gallery-art-img ${key === 7 ? "active" : ""}`}>
+              <img src={img8} alt="" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="gallery-art">
+            <div className={`gallery-art-img ${key === 8 ? "active" : ""}`}>
+              <img src={img9} alt="" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="gallery-art">
+            <div className={`gallery-art-img ${key === 9 ? "active" : ""}`}>
+              <img src={img10} alt="" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="gallery-art">
+            <div className={`gallery-art-img ${key === 10 ? "active" : ""}`}>
+              <img src={img11} alt="" />
             </div>
           </div>
         </div>
