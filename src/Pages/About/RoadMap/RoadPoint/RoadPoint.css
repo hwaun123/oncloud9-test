@@ -45,9 +45,7 @@
 
 .point-content {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
+    }
 
 .point-content-title{
     font-size: 1rem;
@@ -84,3 +82,4 @@
     display: flex;
     align-items: center;
 }
+

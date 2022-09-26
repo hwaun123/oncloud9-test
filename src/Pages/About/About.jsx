@@ -1,17 +1,7 @@
 import Video from "./Video/Video";
 import Main from "./Content/Main";
-import { FullPage, Slide } from "react-full-page";
-import RoadMap from "./RoadMap/RoadMap";
-import { useState } from "react";
-import Team1 from "./Team/Team1";
-import Team2 from "./Team/Team2";
-import Gallery from "./Gallery/Gallery";
 import ReactFullpage from "@fullpage/react-fullpage";
 const About = () => {
-  const [isScrollMain, setIsScrollMain] = useState(false);
-  const [isScrollTeam1, setIsScrollTeam1] = useState(false);
-  const [isScrollTeam2, setIsScrollTeam2] = useState(false);
-
   return (
     <ReactFullpage
       //fullpage options

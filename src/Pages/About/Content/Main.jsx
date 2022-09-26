@@ -7,16 +7,27 @@ import Team2 from "../Team/Team2";
 import useScrollAbout from "../../../Hooks/useScrollAbout";
 import useScrollTitle from "../../../Hooks/useScrollTitle";
 const Main = ({ isScroll }) => {
-  const [isLoad, setIsLoad] = useState(false);
-  useEffect(() => {
-    setIsLoad(false);
-  }, [isScroll]);
   const animatedItem = useScrollAbout();
   const animatedTitle1 = useScrollTitle();
   const animatedTitle2 = useScrollTitle();
   const animatedTitle3 = useScrollTitle();
   const animatedTitle4 = useScrollTitle();
   const animatedTitle5 = useScrollTitle();
+  const animatedTitle6 = useScrollTitle();
+  const animatedTitle7 = useScrollTitle();
+  const animatedTitle8 = useScrollTitle();
+  const animatedTitle9 = useScrollTitle();
+  const animatedTitle10 = useScrollTitle();
+  const animatedTitle11 = useScrollTitle();
+  const animatedTitle12 = useScrollTitle();
+  const animatedTitle13 = useScrollTitle();
+  const animatedTitle14 = useScrollTitle();
+  const animatedTitle15 = useScrollTitle();
+  const animatedTitle16 = useScrollTitle();
+  const animatedTitle17 = useScrollTitle();
+  const animatedTitle18 = useScrollTitle();
+  const animatedTitle19 = useScrollTitle();
+  const animatedTitle20 = useScrollTitle();
 
   return (
     <>
@@ -50,7 +61,23 @@ const Main = ({ isScroll }) => {
           </div>
         </div>
         <div className="about-content">
-          <h1 className="about-content-key">// The Collection</h1>
+          <div className="about-content-name">
+            <div className="title1" {...animatedTitle6}>
+              //{" "}
+            </div>
+            <div className="title2" {...animatedTitle7}>
+              The{" "}
+            </div>
+            <div className="title3" {...animatedTitle8}>
+              Col{" "}
+            </div>
+            <div className="title4" {...animatedTitle9}>
+              lect{" "}
+            </div>
+            <div className="title5" {...animatedTitle10}>
+              ion{" "}
+            </div>
+          </div>
           <div className="about-content-text">
             We are proud to present the Ha Jung Woo x SuperNormal collection, a
             limited edition line of PFP NFTs inspired by the work of renowned
@@ -62,7 +89,23 @@ const Main = ({ isScroll }) => {
           </div>
         </div>
         <div className="about-content">
-          <h1 className="about-content-key">// The Art Concept</h1>
+          <div className="about-content-name">
+            <div className="title1" {...animatedTitle11}>
+              //{" "}
+            </div>
+            <div className="title2" {...animatedTitle12}>
+              The{" "}
+            </div>
+            <div className="title3" {...animatedTitle13}>
+              Art{" "}
+            </div>
+            <div className="title4" {...animatedTitle14}>
+              Conc{" "}
+            </div>
+            <div className="title5" {...animatedTitle15}>
+              ept{" "}
+            </div>
+          </div>
           <div className="about-content-text">
             This collection features the unique style of Ha Jung Woo's artwork
             in the form of NFTs that embodies the beauty and diversity
@@ -70,7 +113,23 @@ const Main = ({ isScroll }) => {
           </div>
         </div>
         <div className="about-content">
-          <h1 className="about-content-key">// The Vision & Value</h1>
+          <div className="about-content-name">
+            <div className="title1" {...animatedTitle16}>
+              //{" "}
+            </div>
+            <div className="title2" {...animatedTitle17}>
+              The{" "}
+            </div>
+            <div className="title3" {...animatedTitle18}>
+              Visi{" "}
+            </div>
+            <div className="title4" {...animatedTitle19}>
+              on&V{" "}
+            </div>
+            <div className="title5" {...animatedTitle20}>
+              alue{" "}
+            </div>
+          </div>
           <div className="about-content-text">
             NFT technology is a cutting-edge tool that allows digital assets to
             transcend their limitations by providing proof of ownership. We aim

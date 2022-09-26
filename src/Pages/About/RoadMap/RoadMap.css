@@ -87,3 +87,9 @@
 .roadmap-img5{
     flex-grow: 1;
 } */
+
+.about-title-name{
+    font-family: "RobotoCondensed";
+    font-weight: bold;
+    color: white;
+}

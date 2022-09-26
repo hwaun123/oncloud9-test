@@ -86,3 +86,11 @@
     transform: translate3d(0%, 0%, 0px) ;
     opacity: 1;
 }
+
+.about-content-name{
+    display: flex;
+    font-weight: bold;
+    font-size: 65px;
+    color: #ce8ab3;
+    font-style: italic
+}

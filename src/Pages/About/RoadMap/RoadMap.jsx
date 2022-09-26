@@ -1,5 +1,6 @@
 /* eslint-disable default-case */
 import { useState } from "react";
+import useScrollTitle from "../../../Hooks/useScrollTitle";
 import img1 from "../../../Images/RoadMapImages/roadmap_1_pc.png";
 import img2 from "../../../Images/RoadMapImages/roadmap_2_pc.png";
 import img3 from "../../../Images/RoadMapImages/roadmap_3_pc.png";
@@ -32,10 +33,31 @@ const RoadMap = () => {
         return <Point5 closePoint={closePoint} />;
     }
   };
+  const animatedTitle1 = useScrollTitle();
+  const animatedTitle2 = useScrollTitle();
+  const animatedTitle3 = useScrollTitle();
+  const animatedTitle4 = useScrollTitle();
+  const animatedTitle5 = useScrollTitle();
   return (
     <>
       <div className="roadmap-container">
-        <h1 className="roadmap-title">ROADMAP</h1>
+        <div className="about-title-name">
+          <div className="title1" {...animatedTitle1}>
+            RO
+          </div>
+          <div className="title2" {...animatedTitle2}>
+            A
+          </div>
+          <div className="title3" {...animatedTitle3}>
+            D
+          </div>
+          <div className="title4" {...animatedTitle4}>
+            MA
+          </div>
+          <div className="title5" {...animatedTitle5}>
+            P
+          </div>
+        </div>
         <div className="roadmap-map">
           {handleClick()}
           <div className={`roadmap-images ${num ? "show" : ""}`}>
