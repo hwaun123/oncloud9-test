@@ -7,11 +7,16 @@ const NavigationBar = ({ isMuck, setIsMuck }) => {
   };
   return (
     <div className="navigation-container">
-      <img src={titleImage} className="title-image"></img>
-      <div>ABOUT</div>
-      <div>ROADMAP</div>
-      <div>TEAM</div>
-      <div>GALLERY</div>
+      <div className="navigation-components">
+        <img src={titleImage} className="title-image"></img>
+        <div className="navigation-screens">
+          <div>ABOUT</div>
+          <div>ROADMAP</div>
+          <div>TEAM</div>
+          <div>GALLERY</div>
+        </div>
+      </div>
+
       <button
         className={`sound-button ${!isMuck ? "notmuck" : ""}`}
         onClick={handleSoundClick}

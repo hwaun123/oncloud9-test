@@ -56,3 +56,12 @@
 .title-image{
     margin-left: 2rem;
 }
+
+.navigation-components{
+    display: flex;
+    gap: 2rem;
+}
+.navigation-screens{
+    display: flex;
+    gap: 2rem;
+}
