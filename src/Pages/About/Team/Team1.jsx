@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import useScrollAbout from "../../../Hooks/useScrollAbout";
 import useScrollTeam from "../../../Hooks/useScrollTeam";
 import useScrollTitle from "../../../Hooks/useScrollTitle";
 import member1 from "../../../Images/MenberImages/member1.png";
