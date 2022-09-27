@@ -1,5 +1,5 @@
 @keyframes fadeout {
-    /* 효과를 동작시간 동안 0 ~ 1까지 */
+
         from {
             opacity: 1;
         }
@@ -8,6 +8,14 @@
         }
     }
     
+@keyframes fadein {
+    
+    from {
+    }
+    to {
+        opacity:1;
+    }
+}
 
 .navigation-container{
     display: flex;
@@ -21,7 +29,14 @@
     justify-content: space-between;
     font-family: "RobotoCondensed";
     font-weight: bold;  
-    animation: fadeout 3s;
+    opacity: 1;
+    animation: fadeout 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+.navigation-container:hover {
+    animation:fadein 1s;
+    animation-fill-mode: forwards;
 }
 .sound-button{
     background-image: url("https://s3.us-west-2.amazonaws.com/secure.notion-static.com/43c84100-445d-45a2-b344-41ebccfb0330/round_off_face_revised.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220926%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220926T133718Z&X-Amz-Expires=86400&X-Amz-Signature=7f08217a144649aeb37570c767d540fc2c49468e62b990a0eed936c8e4ec560a&X-Amz-SignedHeaders=host&x-id=GetObject");
@@ -30,9 +45,14 @@
     height: 32px;
     cursor: pointer;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0)
+    background-color: rgba(0, 0, 0, 0);
+    margin-right: 2rem;
 }
 
 .notmuck{
     background-image: url("https://s3.us-west-2.amazonaws.com/secure.notion-static.com/803a8e0c-a44a-4546-aec8-74e7ab4a3270/round_on_face_revised.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220926%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220926T133718Z&X-Amz-Expires=86400&X-Amz-Signature=1ceeb6d394338dc88c7b2fe55b2691caece59fa98c041ec7ba1f202c0b30b29c&X-Amz-SignedHeaders=host&x-id=GetObject")
+}
+
+.title-image{
+    margin-left: 2rem;
 }

@@ -1,12 +1,13 @@
 import { useState } from "react";
 import "./NavigationBar.css";
+import titleImage from "../../../Images/TitleImages/titleimage.png";
 const NavigationBar = ({ isMuck, setIsMuck }) => {
   const handleSoundClick = () => {
     setIsMuck(!isMuck);
   };
   return (
     <div className="navigation-container">
-      <div>HAJUNGWOO X SUPERNORMAL</div>
+      <img src={titleImage} className="title-image"></img>
       <div>ABOUT</div>
       <div>ROADMAP</div>
       <div>TEAM</div>

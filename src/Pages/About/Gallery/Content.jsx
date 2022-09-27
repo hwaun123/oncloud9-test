@@ -67,31 +67,24 @@ const Content = ({ id }) => {
         break;
       case 8:
         setTitle("HA JUNG WOO");
-        setText1("Berlin");
+        setText1("Untitled");
         setText2("2012");
-        setText3("Acrylic, Pen on Canvas");
-        setText4("178 x 139 cm");
+        setText3("Oil on Canvas");
+        setText4("91 x 72.8 cm");
         break;
       case 9:
         setTitle("HA JUNG WOO");
-        setText1("Berlin");
-        setText2("2012");
-        setText3("Acrylic, Pen on Canvas");
-        setText4("178 x 139 cm");
+        setText1("Untitled");
+        setText2("2021");
+        setText3("Oil on Canvas");
+        setText4("117 x 91 cm");
         break;
       case 10:
         setTitle("HA JUNG WOO");
-        setText1("Berlin");
-        setText2("2012");
-        setText3("Acrylic, Pen on Canvas");
-        setText4("178 x 139 cm");
-        break;
-      case 11:
-        setTitle("HA JUNG WOO");
-        setText1("Berlin");
-        setText2("2012");
-        setText3("Acrylic, Pen on Canvas");
-        setText4("178 x 139 cm");
+        setText1("Untitled");
+        setText2("2021");
+        setText3("Oil on Canvas");
+        setText4("73 x 61 cm");
         break;
     }
   }, [id]);

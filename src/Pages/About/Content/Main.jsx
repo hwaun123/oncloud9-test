@@ -145,7 +145,6 @@ const Main = ({ isScroll }) => {
       <Team1 isScroll={true} />
       <Team2 isScroll={true} />
       <Gallery />
-      <NavigationBar />
     </>
   );
 };
