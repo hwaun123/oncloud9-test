@@ -1,10 +1,8 @@
-import "./video.css";
-
 const Video = ({ isMuck }) => {
   console.log(isMuck);
   return (
     <>
-      <video autoPlay muted={isMuck} loop>
+      <video autoPlay muted={isMuck} loop className="video">
         <source src="videos/main_video.mp4" type="video/mp4"></source>
       </video>
     </>
