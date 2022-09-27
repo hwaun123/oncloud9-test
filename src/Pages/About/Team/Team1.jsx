@@ -6,7 +6,7 @@ import member1 from "../../../Images/MenberImages/member1.png";
 import member2 from "../../../Images/MenberImages/member2.png";
 import member3 from "../../../Images/MenberImages/member3.png";
 import "./Team.css";
-const Team1 = () => {
+const Team1 = ({ teamRef }) => {
   const { ref, isChange } = useScrollTeam();
   console.log(isChange);
   const animatedTitle1 = useScrollTitle();
@@ -14,7 +14,7 @@ const Team1 = () => {
   const animatedTitle3 = useScrollTitle();
   const animatedTitle4 = useScrollTitle();
   return (
-    <div className="team-container">
+    <div className="team-container" ref={teamRef}>
       <div className="about-title-name">
         <div className="title1" {...animatedTitle1}>
           T

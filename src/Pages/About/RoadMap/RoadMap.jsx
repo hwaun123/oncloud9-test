@@ -12,7 +12,7 @@ import Point2 from "./RoadPoint/Point2";
 import Point3 from "./RoadPoint/Point3";
 import Point4 from "./RoadPoint/Point4";
 import Point5 from "./RoadPoint/Point5";
-const RoadMap = () => {
+const RoadMap = ({ roadmapRef }) => {
   const [num, setNum] = useState(0);
 
   const closePoint = () => {
@@ -40,7 +40,7 @@ const RoadMap = () => {
   const animatedTitle5 = useScrollTitle();
   return (
     <>
-      <div className="roadmap-container">
+      <div className="roadmap-container" ref={roadmapRef}>
         <div className="about-title-name">
           <div className="title1" {...animatedTitle1}>
             RO

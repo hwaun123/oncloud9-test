@@ -18,7 +18,8 @@ import img11 from "../../../Images/GalleryImages/gallery11.png";
 import Content from "./Content";
 import { useState } from "react";
 import useScrollTitle from "../../../Hooks/useScrollTitle";
-const Gallery = () => {
+import { useEffect } from "react";
+const Gallery = ({ galleryRef }) => {
   const [key, setKey] = useState(0);
   const handleChage = (index) => {
     setKey(index);
@@ -33,6 +34,9 @@ const Gallery = () => {
   const animatedTitle2 = useScrollTitle();
   const animatedTitle3 = useScrollTitle();
   const animatedTitle4 = useScrollTitle();
+  useEffect(() => {
+    galleryRef.current = animatedTitle1.ref.current;
+  }, []);
   return (
     <div className="gallery-container">
       <div className="about-title-name">

@@ -65,3 +65,8 @@
     display: flex;
     gap: 2rem;
 }
+
+.navi-screen:hover{
+    cursor:pointer;
+    border-bottom: 2px solid white;
+}

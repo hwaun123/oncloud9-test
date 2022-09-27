@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./Main.css";
 import RoadMap from "../RoadMap/RoadMap";
 import Gallery from "../Gallery/Gallery";
@@ -6,8 +5,10 @@ import Team1 from "../Team/Team1";
 import Team2 from "../Team/Team2";
 import useScrollAbout from "../../../Hooks/useScrollAbout";
 import useScrollTitle from "../../../Hooks/useScrollTitle";
-import NavigationBar from "../NavigationBar/NavigationBar";
-const Main = ({ isScroll }) => {
+import { forwardRef, useRef } from "react";
+import { useEffect } from "react";
+
+const Main = ({ aboutRef, roadmapRef, teamRef, galleryRef }) => {
   const animatedItem = useScrollAbout();
   const animatedTitle1 = useScrollTitle();
   const animatedTitle2 = useScrollTitle();
@@ -29,7 +30,9 @@ const Main = ({ isScroll }) => {
   const animatedTitle18 = useScrollTitle();
   const animatedTitle19 = useScrollTitle();
   const animatedTitle20 = useScrollTitle();
-
+  useEffect(() => {
+    aboutRef.current = animatedItem.ref.current;
+  }, []);
   return (
     <>
       <div className={`about-container`} {...animatedItem}>
@@ -141,12 +144,15 @@ const Main = ({ isScroll }) => {
         </div>
         <form />
       </div>
-      <RoadMap />
-      <Team1 isScroll={true} />
-      <Team2 isScroll={true} />
-      <Gallery />
+      <RoadMap roadmapRef={roadmapRef} />
+      <Team1 teamRef={teamRef} />
+      <Team2 />
+      <Gallery galleryRef={galleryRef} />
     </>
   );
 };
+// const Main = () => {
+
+// };
 
 export default Main;
