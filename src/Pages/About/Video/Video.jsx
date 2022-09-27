@@ -1,4 +1,4 @@
-import "./Video.css";
+import "./video.css";
 
 const Video = ({ isMuck }) => {
   console.log(isMuck);
