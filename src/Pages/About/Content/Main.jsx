@@ -5,9 +5,7 @@ import Team1 from "../Team/Team1";
 import Team2 from "../Team/Team2";
 import useScrollAbout from "../../../Hooks/useScrollAbout";
 import useScrollTitle from "../../../Hooks/useScrollTitle";
-import { forwardRef, useRef } from "react";
 import { useEffect } from "react";
-import Footer from "../Footer/Footer";
 
 const Main = ({ aboutRef, roadmapRef, teamRef, galleryRef }) => {
   const animatedItem = useScrollAbout();
@@ -152,8 +150,5 @@ const Main = ({ aboutRef, roadmapRef, teamRef, galleryRef }) => {
     </>
   );
 };
-// const Main = () => {
-
-// };
 
 export default Main;
