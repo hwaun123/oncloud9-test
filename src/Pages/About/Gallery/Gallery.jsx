@@ -19,6 +19,7 @@ import Content from "./Content";
 import { useState } from "react";
 import useScrollTitle from "../../../Hooks/useScrollTitle";
 import { useEffect } from "react";
+import Footer from "../Footer/Footer";
 const Gallery = ({ galleryRef }) => {
   const [key, setKey] = useState(0);
   const handleChage = (index) => {
@@ -135,6 +136,7 @@ const Gallery = ({ galleryRef }) => {
         </div>
         <div></div>
       </Slider>
+      <Footer />
     </div>
   );
 };

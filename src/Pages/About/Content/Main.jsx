@@ -7,6 +7,7 @@ import useScrollAbout from "../../../Hooks/useScrollAbout";
 import useScrollTitle from "../../../Hooks/useScrollTitle";
 import { forwardRef, useRef } from "react";
 import { useEffect } from "react";
+import Footer from "../Footer/Footer";
 
 const Main = ({ aboutRef, roadmapRef, teamRef, galleryRef }) => {
   const animatedItem = useScrollAbout();
