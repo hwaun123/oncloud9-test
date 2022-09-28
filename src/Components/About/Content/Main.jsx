@@ -1,8 +1,8 @@
 import "./Main.css";
-import RoadMap from "../RoadMap/RoadMap";
-import Gallery from "../Gallery/Gallery";
-import Team1 from "../Team/Team1";
-import Team2 from "../Team/Team2";
+import RoadMap from "../../RoadMap/RoadMap";
+import Gallery from "../../Gallery/Gallery";
+import Team1 from "../../Team/Team1";
+import Team2 from "../../Team/Team2";
 import useScrollAbout from "../../../Hooks/useScrollAbout";
 import useScrollTitle from "../../../Hooks/useScrollTitle";
 import { useEffect } from "react";

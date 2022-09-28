@@ -19,7 +19,7 @@ import Content from "./Content";
 import { useState } from "react";
 import useScrollTitle from "../../../Hooks/useScrollTitle";
 import { useEffect } from "react";
-import Footer from "../Footer/Footer";
+import Footer from "../common/Footer/Footer";
 const Gallery = ({ galleryRef }) => {
   const [key, setKey] = useState(0);
   const handleChage = (index) => {
@@ -40,7 +40,7 @@ const Gallery = ({ galleryRef }) => {
   }, []);
   return (
     <div className="gallery-container">
-      <div className="about-title-name">
+      <div className="gallery-title-name">
         <div className="title1" {...animatedTitle1}>
           GA
         </div>

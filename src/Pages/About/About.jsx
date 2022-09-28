@@ -8,13 +8,13 @@ const About = ({ isMuck, aboutRef, roadmapRef, teamRef, galleryRef }) => {
       //fullpage options
       licenseKey={"YOUR_KEY_HERE"}
       scrollingSpeed={1000}
-      /* Options here */
       render={({ state, fullpageApi }) => {
         return (
           <ReactFullpage.Wrapper>
             <div className="section">
               <Video isMuck={isMuck} />
             </div>
+            s
             <div className="section">
               <Main
                 aboutRef={aboutRef}

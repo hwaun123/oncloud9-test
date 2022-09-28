@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import "./NavigationBar.css";
 import titleImage from "../../../Images/TitleImages/titleimage.png";
 import { forwardRef } from "react";
-import Gallery from "../Gallery/Gallery";
+import Gallery from "../../Gallery/Gallery";
 const NavigationBar = forwardRef(
   ({ isMuck, setIsMuck, aboutRef, roadmapRef, teamRef, galleryRef }) => {
     const handleSoundClick = () => {
