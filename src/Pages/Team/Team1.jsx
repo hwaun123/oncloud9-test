@@ -1,8 +1,8 @@
-import useScrollTeam from "../../../Hooks/useScrollTeam";
-import useScrollTitle from "../../../Hooks/useScrollTitle";
-import member1 from "../../../Images/MenberImages/member1.png";
-import member2 from "../../../Images/MenberImages/member2.png";
-import member3 from "../../../Images/MenberImages/member3.png";
+import useScrollTeam from "../../Hooks/useScrollTeam";
+import useScrollTitle from "../../Hooks/useScrollTitle";
+import member1 from "../../Images/MenberImages/member1.png";
+import member2 from "../../Images/MenberImages/member2.png";
+import member3 from "../../Images/MenberImages/member3.png";
 import "./Team.css";
 const Team1 = ({ teamRef }) => {
   const { ref, isChange } = useScrollTeam();

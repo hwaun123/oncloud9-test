@@ -1,5 +1,4 @@
 const Video = ({ isMuck }) => {
-  console.log(isMuck);
   return (
     <>
       <video autoPlay muted={isMuck} loop className="video">

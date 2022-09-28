@@ -1,8 +1,12 @@
-const Team = () => {
+import Team1 from "./Team1";
+import Team2 from "./Team2";
+
+const Team = ({ teamRef }) => {
   return (
-    <div>
-      <div>a</div>
-    </div>
+    <>
+      <Team1 teamRef={teamRef} />
+      <Team2 />
+    </>
   );
 };
 
