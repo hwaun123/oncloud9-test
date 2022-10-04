@@ -51,16 +51,16 @@ const Gallery = ({ galleryRef }) => {
       handleChage(i);
     },
   };
-  // console.log(
-  //   new Array(index).fill().map(
-  //     (v, i) => `
-  // .slick-dots li:nth-child(${i}) > button {
-  //   width: 100% !important;
-  //   opacity: 1 !important;
-  // }
-  // `
-  //   )
-  // );
+  console.log(
+    new Array(index).fill().map(
+      (v, i) => `
+  .slick-dots li:nth-child(${i}) > button {
+    width: 100% !important;
+    opacity: 1 !important;
+  }
+  `
+    )
+  );
   const { ref, observed } = useScrollAbout();
   useEffect(() => {
     galleryRef.current = ref.current;

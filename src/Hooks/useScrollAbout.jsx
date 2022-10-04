@@ -10,7 +10,7 @@ const useScrollAbout = () => {
 
     if (entry.isIntersecting) {
       current.classList.add("onView");
-      // console.dir(current);
+      console.dir(current);
       setObserved(true);
     }
   }, []);

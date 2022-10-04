@@ -1,4 +1,4 @@
-import { useRef, createRef } from "react";
+import { useRef } from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
@@ -8,6 +8,7 @@ import Video from "./Pages/Video/Video";
 import About from "./Pages/About/About";
 import Team from "./Pages/Team/Team";
 import NavigationBar from "./Components/NavigationBar/NavigationBar";
+import Loading from "./Components/Loading/Loading";
 
 const App = () => {
   const [isMuck, setIsMuck] = useState(true);
@@ -23,7 +24,8 @@ const App = () => {
   }, []);
   return (
     <>
-      {/* {isLoading && <Loading />} */}
+      {isLoading && <Loading />}
+
       <NavigationBar
         isMuck={isMuck}
         setIsMuck={setIsMuck}

@@ -9,7 +9,7 @@ const useScrollTeam = () => {
     const { current } = dom;
     if (entry.isIntersecting) {
       current.classList.add("onTeamView");
-      // console.dir(current);
+      console.dir(current);
       setIsChange(true);
       // current.style = {transform: "translate3d(0%, 0%, 0px)"}
       // current.aboutContainer.opacity = 1;

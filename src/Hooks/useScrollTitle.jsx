@@ -8,7 +8,7 @@ const useScrollTitle = () => {
 
     if (entry.isIntersecting) {
       current.classList.add("onTitleView");
-      // console.dir(current);
+      console.dir(current);
       // current.style = {transform: "translate3d(0%, 0%, 0px)"}
       // current.aboutContainer.opacity = 1;
     }
