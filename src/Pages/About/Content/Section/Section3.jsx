@@ -1,12 +1,22 @@
-const Section3 = () => {
+const Section3 = ({ observed }) => {
   return (
     <div className="about-content">
       <div className="about-content-name">
-        <div className="title1">// &nbsp;</div>
-        <div className="title2">The &nbsp;</div>
-        <div className="title3">Visi </div>
-        <div className="title4">on &nbsp;& &nbsp;V</div>
-        <div className="title5">alue </div>
+        <div className={"title1" + ` ${observed ? "onTitleView" : ""}`}>
+          // &nbsp;
+        </div>
+        <div className={"title2" + ` ${observed ? "onTitleView" : ""}`}>
+          The &nbsp;
+        </div>
+        <div className={"title3" + ` ${observed ? "onTitleView" : ""}`}>
+          Visi{" "}
+        </div>
+        <div className={"title4" + ` ${observed ? "onTitleView" : ""}`}>
+          on &
+        </div>
+        <div className={"title5" + ` ${observed ? "onTitleView" : ""}`}>
+          &nbsp;Value{" "}
+        </div>
       </div>
       <div className="about-content-text">
         NFT technology is a cutting-edge tool that allows digital assets to

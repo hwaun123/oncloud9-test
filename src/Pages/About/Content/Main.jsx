@@ -6,20 +6,20 @@ import Head from "./Head/Head";
 import Section1 from "./Section/Section1";
 import Section2 from "./Section/Section2";
 import Section3 from "./Section/Section3";
+import { useState } from "react";
 
 const Main = ({ aboutRef }) => {
-  const animatedItem = useScrollAbout();
-  // useScrollTitle()
+  const { ref, observed } = useScrollAbout();
   useEffect(() => {
-    aboutRef.current = animatedItem.ref.current;
+    aboutRef.current = ref.current;
   }, []);
   return (
     <>
-      <div className={`about-container`} {...animatedItem}>
-        <Head />
-        <Section1 />
-        <Section2 />
-        <Section3 />
+      <div className={`about-container`} ref={ref}>
+        <Head observed={observed} />
+        <Section1 observed={observed} />
+        <Section2 observed={observed} />
+        <Section3 observed={observed} />
       </div>
     </>
   );

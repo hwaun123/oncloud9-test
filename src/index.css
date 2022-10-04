@@ -1,40 +1,48 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-image: url('Images/background.png');
-    background-size: cover;
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("Images/background.png");
+  background-size: cover;
+  overflow-x: hidden;
+}
+.section {
+  overflow-x: hidden;
+}
+
+.fp-is-overflow > .fp-overflow {
+  overflow-x: hidden;
 }
 
 @font-face {
-    font-family: "RobotoCondensed";
-    src: url("./Asset/Font/RobotoCondensed-Bold.ttf");
-    font-weight: bold;
+  font-family: "RobotoCondensed";
+  src: url("./Asset/Font/RobotoCondensed-Bold.ttf");
+  font-weight: bold;
 }
 @font-face {
-    font-family: "RobotoCondensed";
-    src: url("./Asset/Font/RobotoCondensed-BoldItalic.ttf");
-    font-weight: bold;
-    font-style: italic;
+  font-family: "RobotoCondensed";
+  src: url("./Asset/Font/RobotoCondensed-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
 }
 @font-face {
-    font-family: "RobotoCondensed";
-    src: url("./Asset/Font/RobotoCondensed-Italic.ttf");
-    font-weight: normal;
-    font-style: italic;
+  font-family: "RobotoCondensed";
+  src: url("./Asset/Font/RobotoCondensed-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
 }
 @font-face {
-    font-family: "RobotoCondensed";
-    src: url("./Asset/Font/RobotoCondensed-Light.ttf");
-    font-weight: 200;
+  font-family: "RobotoCondensed";
+  src: url("./Asset/Font/RobotoCondensed-Light.ttf");
+  font-weight: 200;
 }
 @font-face {
-    font-family: "RobotoCondensed";
-    src: url("./Asset/Font/RobotoCondensed-LightItalic.ttf");
-    font-weight: 200;
-    font-style: italic;
+  font-family: "RobotoCondensed";
+  src: url("./Asset/Font/RobotoCondensed-LightItalic.ttf");
+  font-weight: 200;
+  font-style: italic;
 }
 @font-face {
-    font-family: "RobotoCondensed";
-    src: url("./Asset/Font/RobotoCondensed-Regular.ttf");
-    font-weight: 600;
+  font-family: "RobotoCondensed";
+  src: url("./Asset/Font/RobotoCondensed-Regular.ttf");
+  font-weight: 600;
 }

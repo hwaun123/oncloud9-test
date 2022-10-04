@@ -1,12 +1,22 @@
-const Section2 = () => {
+const Section2 = ({ observed }) => {
   return (
     <div className="about-content">
       <div className="about-content-name">
-        <div className="title1">// &nbsp;</div>
-        <div className="title2">The &nbsp;</div>
-        <div className="title3">Art &nbsp;</div>
-        <div className="title4">Conc </div>
-        <div className="title5">ept </div>
+        <div className={"title1" + ` ${observed ? "onTitleView" : ""}`}>
+          // &nbsp;
+        </div>
+        <div className={"title1" + ` ${observed ? "onTitleView" : ""}`}>
+          The &nbsp;
+        </div>
+        <div className={"title1" + ` ${observed ? "onTitleView" : ""}`}>
+          Art &nbsp;
+        </div>
+        <div className={"title1" + ` ${observed ? "onTitleView" : ""}`}>
+          Conc{" "}
+        </div>
+        <div className={"title1" + ` ${observed ? "onTitleView" : ""}`}>
+          ept{" "}
+        </div>
       </div>
       <div className="about-content-text">
         This collection features the unique style of Ha Jung Woo's artwork in

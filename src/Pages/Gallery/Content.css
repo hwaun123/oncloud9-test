@@ -1,16 +1,16 @@
-.content-container{
-    color: white;
-    position: absolute;
-    left: 18%;
-    top:100%;
-    z-index: 1;
+.content-container {
+  color: white;
+
+  opacity: 0;
+  transition: 1s;
 }
 
-.active{
-    filter: brightness(100%);
+.active {
+  opacity: 1;
+  filter: brightness(100%);
 }
 
-.content-title{
-    border-bottom: 2px solid #ad667d;
-    width: 300px;
+.content-title {
+  border-bottom: 2px solid #ad667d;
+  min-width: 200px;
 }

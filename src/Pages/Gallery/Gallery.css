@@ -1,88 +1,92 @@
-.gallery-container{
-    height: 50vh;
-    padding: 0rem 5rem;
-    position:relative;  
+.slick-dots li {
+  width: 50px !important;
+  margin: 0 !important;
+}
+.slick-dots li button {
+  border-bottom: 3px solid white !important;
+  width: 0px !important;
+  opacity: 1 !important;
+  padding: 0 !important;
+  transition: 0.4s all ease-in;
+}
+.slick-dots li button:before {
+  content: "" !important;
+  width: 0% !important;
+}
+.gallery-container {
+  position: relative;
+  padding: 2rem 0;
 }
 
-.gallery-art{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.gallery-art {
+  position: relative;
+  right: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.gallery-art > img{
-    height: 100%;
-    width: 100%;
+.gallery-art > img {
+  height: 100%;
+  width: 100%;
 }
 
-.slick-slide{
-    width: 33%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.gallery-art-img {
+  height: 25%;
+  width: 100%;
+  filter: brightness(40%);
+  position: relative;
+  z-index: 578;
+  transition: 1s;
 }
 
-.gallery-art-img{
-    height: 25%;
-    width: 100%;
-    filter: brightness(40%);
-    position:relative;
-    z-index: 578;
-    transition: 1s;
+.gallery-art-img > img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  opacity: 0.4;
 }
 
-
-.gallery-art-img > img{
-    width: 250px;
-    height: 350px;
-    object-fit: cover;
-    opacity: 0.4;
+.active {
+  z-index: 999;
 }
 
 .active > img {
-    width: 400px;
-    height: 500px;
-    opacity: 1;
-    border: 1px solid #ad667d;
-    padding: 15px;
+  width: 400px;
+  height: 500px;
+  opacity: 1;
+  border: 1px solid #ad667d;
+  padding: 15px;
 }
 
-.slick-slider{
-    height: 95vh;
+.slick-initialized .slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
 }
-
-.slick-list{
-    height: 100%;
+.slick-track {
+  display: flex !important;
+  align-items: center;
 }
-.slick-track{
-    height: 100%;
-}
-
-.slick-initialized .slick-slide{
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-}
-
 .gallery-title {
-    color: white;
-    font-family: 'RobotoCondensed'; 
-    font-size: 50px;
-    font-weight: bold;
+  color: white;
+  font-family: "RobotoCondensed";
+  font-size: 50px;
+  font-weight: bold;
 }
 
-.fp-watermark{
-    opacity: 0;
+.fp-watermark {
+  opacity: 0;
 }
 
-.slick-prev{
-    opacity: 0;
+.slick-prev {
+  opacity: 0;
 }
 
-.slick-next{
-    opacity: 0;
+.slick-next {
+  opacity: 0;
 }
 
-.gallery-title-name{
-    
+.gallery-title-name {
+  display: flex;
 }

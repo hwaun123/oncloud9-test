@@ -1,12 +1,22 @@
-const Section1 = () => {
+const Section1 = ({ observed }) => {
   return (
     <div className="about-content">
       <div className="about-content-name">
-        <div className="title1">// &nbsp;</div>
-        <div className="title2">The &nbsp;</div>
-        <div className="title3">Col </div>
-        <div className="title4">lect </div>
-        <div className="title5">ion </div>
+        <div className={"title1" + ` ${observed ? "onTitleView" : ""}`}>
+          // &nbsp;
+        </div>
+        <div className={"title2" + ` ${observed ? "onTitleView" : ""}`}>
+          The &nbsp;
+        </div>
+        <div className={"title3" + ` ${observed ? "onTitleView" : ""}`}>
+          Col{" "}
+        </div>
+        <div className={"title4" + ` ${observed ? "onTitleView" : ""}`}>
+          lect{" "}
+        </div>
+        <div className={"title5" + ` ${observed ? "onTitleView" : ""}`}>
+          ion{" "}
+        </div>
       </div>
       <div className="about-content-text">
         We are proud to present the Ha Jung Woo x SuperNormal collection, a

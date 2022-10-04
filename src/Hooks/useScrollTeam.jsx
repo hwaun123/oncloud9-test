@@ -8,10 +8,8 @@ const useScrollTeam = () => {
   const handleScroll = useCallback(([entry]) => {
     const { current } = dom;
     if (entry.isIntersecting) {
-      console.log(current.className);
       current.classList.add("onTeamView");
-      console.log("teamview");
-      console.dir(current);
+      // console.dir(current);
       setIsChange(true);
       // current.style = {transform: "translate3d(0%, 0%, 0px)"}
       // current.aboutContainer.opacity = 1;

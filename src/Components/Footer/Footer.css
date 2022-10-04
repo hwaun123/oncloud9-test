@@ -1,15 +1,16 @@
-.foot{
-    display: flex;
-    position:relative;
-    color: white;
-    z-index: 600;
-    width: 100%;
-    bottom: 0;
-    font-size: 12px;
-    background: (rgba(0,0,0,0));
-    align-items: center;
-    font-family: "RobotoCondensed";
-    font-weight: 200;  
-    opacity: 1;
-    justify-content: center;
+.foot {
+  display: flex;
+  position: relative;
+  color: white;
+  z-index: 600;
+  width: 100%;
+  bottom: 0;
+  font-size: 12px;
+  background: (rgba(0, 0, 0, 0));
+  align-items: center;
+  font-family: "RobotoCondensed";
+  font-weight: 200;
+  opacity: 1;
+  justify-content: center;
+  margin-top: 100px;
 }

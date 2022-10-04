@@ -1,12 +1,12 @@
-const Head = () => {
+const Head = ({ observed }) => {
   return (
     <div className="about-title">
       <div className="about-title-name">
-        <div className="title1">A</div>
-        <div className="title2">B</div>
-        <div className="title3">O</div>
-        <div className="title4">U</div>
-        <div className="title5">T</div>
+        <div className={"title1" + ` ${observed ? "onTitleView" : ""}`}>A</div>
+        <div className={"title2" + ` ${observed ? "onTitleView" : ""}`}>B</div>
+        <div className={"title3" + ` ${observed ? "onTitleView" : ""}`}>O</div>
+        <div className={"title4" + ` ${observed ? "onTitleView" : ""}`}>U</div>
+        <div className={"title5" + ` ${observed ? "onTitleView" : ""}`}>T</div>
       </div>
       <div className="about-title-text">
         Avant Garde Studio designs and produces luxury digital fashion NFTs and

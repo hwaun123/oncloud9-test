@@ -16,14 +16,11 @@ const App = () => {
   const teamRef = useRef();
   const galleryRef = useRef;
   // const aboutRef = createRef();
-  console.log(aboutRef);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    console.log("asdfsdaf", isLoading);
     setTimeout(() => setIsLoading(false), 1000);
   }, []);
-  console.log("isLo", isLoading);
   return (
     <>
       {/* {isLoading && <Loading />} */}

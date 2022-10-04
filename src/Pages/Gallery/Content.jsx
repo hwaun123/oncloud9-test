@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Content.css";
-const Content = ({ id }) => {
+const Content = ({ id, selection }) => {
   const [title, setTitle] = useState("");
   const [text1, setText1] = useState("");
   const [text2, setText2] = useState("");
@@ -8,7 +8,8 @@ const Content = ({ id }) => {
   const [text4, setText4] = useState("");
 
   useEffect(() => {
-    switch (id) {
+    // eslint-disable-next-line default-case
+    switch (selection) {
       case 0:
         setTitle("HA JUNG WOO");
         setText1("Dream");
@@ -87,10 +88,12 @@ const Content = ({ id }) => {
         setText4("73 x 61 cm");
         break;
     }
-  }, [id]);
+  }, [selection]);
 
   return (
-    <div className="content-container">
+    <div
+      className={"content-container" + ` ${id === selection ? "active" : ""}`}
+    >
       <div className="content-title">{title}</div>
       <div className="content-text">{text1}</div>
       <div className="content-text">{text2}</div>
